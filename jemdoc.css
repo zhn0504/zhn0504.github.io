@@ -558,6 +558,43 @@ table.imgtable, table.imgtable td {
     text-justify: inter-word;
 }
 
+
+/* =========================================================
+   News: independently scrollable section
+   ========================================================= */
+
+.news-scroll {
+    max-height: 6.6em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0.6em;
+    margin-bottom: 0.8em;
+    scrollbar-width: thin;
+    scrollbar-color: #9aa8bd transparent;
+}
+
+.news-scroll ul {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
+.news-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+    background-color: #a9b5c6;
+    border-radius: 8px;
+}
+
+.news-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #7f90a8;
+}
+
 /* =========================================================
    Mobile responsive adjustments
    Desktop appearance remains unchanged.
@@ -699,6 +736,12 @@ table.imgtable, table.imgtable td {
     .short-bio,
     .project-description {
         text-align: left;
+    }
+
+    .news-scroll {
+        max-height: 8.4em;
+        padding-right: 0.35em;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
