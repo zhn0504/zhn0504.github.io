@@ -387,3 +387,173 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+/* =========================================================
+   Custom styles for zhn0504.github.io
+   Moved from the previous inline <style> block in index.html
+   ========================================================= */
+
+/* Short Bio */
+.short-bio {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Education */
+.edu-list {
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
+}
+
+.edu-list li {
+    margin-bottom: 0.35em;
+}
+
+.edu-row,
+.edu-degree-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.edu-date,
+.edu-country {
+    margin-left: 2em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.edu-degree {
+    display: block;
+}
+
+.edu-gpa {
+    display: block;
+    margin-left: 0;
+}
+
+/* Publications */
+.publication-title {
+    color: #224b8d;
+}
+
+.pub-resource {
+    font-style: normal !important;
+}
+
+.github-icon {
+    width: 0.95em;
+    height: 0.95em;
+    vertical-align: -0.10em;
+    fill: currentColor;
+}
+
+/* Research Experience */
+.research-item {
+    margin-bottom: 0.55em;
+}
+
+.research-row,
+.research-subrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.research-date,
+.research-location {
+    margin-left: 2em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.research-subrow {
+    font-style: italic;
+}
+
+.research-location {
+    font-style: normal;
+}
+
+.research-topic {
+    display: block;
+    margin-left: 0;
+}
+
+/* Industrial Experience */
+.industrial-item {
+    margin-bottom: 0.35em;
+}
+
+.industrial-row,
+.industrial-subrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.industrial-date,
+.industrial-location {
+    margin-left: 2em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.industrial-subrow {
+    font-style: italic;
+}
+
+.industrial-location {
+    font-style: normal;
+}
+
+/* Honors & Awards */
+.award-item {
+    margin-bottom: 0.35em;
+}
+
+.award-row,
+.award-subrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.award-date,
+.award-links {
+    margin-left: 2em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.award-subrow {
+    font-style: italic;
+}
+
+.award-links {
+    font-style: normal;
+}
+
+/* Selected Project */
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.project-date {
+    margin-left: 2em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.project-description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
