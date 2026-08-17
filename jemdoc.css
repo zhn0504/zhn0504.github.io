@@ -31,7 +31,8 @@ body {
   padding-top: 10px;
   padding-bottom: 50px;
   max-width: 960px;
-  min-width: 600px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #layout-menu {
@@ -555,5 +556,149 @@ table.imgtable, table.imgtable td {
 .project-description {
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* =========================================================
+   Mobile responsive adjustments
+   Desktop appearance remains unchanged.
+   ========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    html {
+        background-color: #ffffff;
+    }
+
+    body {
+        width: auto;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        padding: 14px 16px 28px 16px;
+        font-size: 16px;
+        line-height: 1.35;
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        overflow-x: hidden;
+    }
+
+    #layout-content {
+        width: auto;
+        max-width: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Keep heading sizes consistent on phones */
+    h1 {
+        font-size: 165%;
+    }
+
+    h2 {
+        font-size: 125%;
+    }
+
+    h3 {
+        font-size: 110%;
+    }
+
+    /* Header/profile area */
+    table.imgtable,
+    table.imgtable tbody,
+    table.imgtable tr {
+        display: block;
+        width: 100%;
+    }
+
+    table.imgtable td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    table.imgtable td:first-child {
+        margin-bottom: 10px;
+    }
+
+    table.imgtable img {
+        width: 120px !important;
+        max-width: 42vw;
+        height: auto;
+    }
+
+    /* Prevent long addresses / emails / links from forcing zoom or overflow */
+    p,
+    li,
+    td,
+    span,
+    a {
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    /* CV-style rows become stacked on narrow screens */
+    .edu-row,
+    .edu-degree-row,
+    .research-row,
+    .research-subrow,
+    .industrial-row,
+    .industrial-subrow,
+    .award-row,
+    .award-subrow,
+    .project-row {
+        display: block;
+        width: 100%;
+    }
+
+    .edu-date,
+    .edu-country,
+    .research-date,
+    .research-location,
+    .industrial-date,
+    .industrial-location,
+    .award-date,
+    .award-links,
+    .project-date {
+        display: block;
+        margin-left: 0;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .edu-date,
+    .research-date,
+    .industrial-date,
+    .award-date,
+    .project-date {
+        margin-top: 0.08em;
+    }
+
+    .edu-country,
+    .research-location,
+    .industrial-location,
+    .award-links {
+        margin-top: 0.05em;
+    }
+
+    /* Slightly tighten list indentation on phones */
+    ul,
+    ol {
+        padding-left: 1.55em;
+    }
+
+    /* Keep inline SVG GitHub icons small */
+    .github-icon {
+        width: 0.95em;
+        height: 0.95em;
+        vertical-align: -0.10em;
+    }
+
+    /* Avoid excessive justification gaps on very narrow screens */
+    .short-bio,
+    .project-description {
+        text-align: left;
+    }
 }
 
