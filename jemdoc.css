@@ -1,0 +1,320 @@
+/*
+ * Academic homepage stylesheet
+ * Inspired by the classic Jemdoc academic-homepage layout.
+ * Designed for zhn0504.github.io
+ */
+
+/* =========================
+   Global
+   ========================= */
+
+html {
+  background: #eeeeee;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+  color: #222222;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.48;
+}
+
+#layout-content {
+  width: min(1180px, calc(100% - 64px));
+  margin: 28px auto;
+  padding: 26px 66px 36px;
+  box-sizing: border-box;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+
+/* =========================
+   Typography
+   ========================= */
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #4a70b5;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#toptitle {
+  margin: 0 0 28px;
+  padding-bottom: 8px;
+  border-bottom: 3px double #9a9a9a;
+}
+
+h2 {
+  margin-top: 36px;
+  margin-bottom: 11px;
+  padding-bottom: 3px;
+  color: #4a70b5;
+  font-size: 27px;
+  font-weight: 700;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #24549a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #173d75;
+  text-decoration: underline;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+ul,
+ol {
+  margin-top: 8px;
+  margin-bottom: 14px;
+  padding-left: 28px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+
+/* =========================
+   Header / profile
+   ========================= */
+
+.imgtable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4px 0 20px;
+}
+
+.imgtable td {
+  vertical-align: top;
+}
+
+.photo-cell {
+  width: 190px;
+  padding-right: 24px;
+}
+
+.profile-photo {
+  display: block;
+  width: 185px;
+  max-width: 185px;
+  height: auto;
+  border: 1px solid #777777;
+}
+
+.intro-cell {
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.intro-cell p {
+  margin: 8px 0;
+}
+
+.link-row {
+  margin-top: 22px !important;
+  font-size: 18px;
+}
+
+.sep {
+  margin: 0 3px;
+  color: #777777;
+}
+
+
+/* =========================
+   News
+   ========================= */
+
+.news-list {
+  list-style-type: square;
+}
+
+.news-date {
+  display: inline-block;
+  min-width: 92px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   Publications
+   ========================= */
+
+.publication-note {
+  margin-top: -2px;
+  font-size: 15px;
+  color: #666666;
+}
+
+.pub-list {
+  padding-left: 30px;
+}
+
+.pub-list > li {
+  margin-bottom: 19px;
+  padding-left: 5px;
+}
+
+.pub-list p {
+  margin: 3px 0;
+}
+
+.paper-links {
+  margin-top: 5px !important;
+}
+
+.paper-links a {
+  display: inline-block;
+  margin-right: 7px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Experience / Education
+   ========================= */
+
+.experience-item,
+.education-item {
+  margin: 14px 0 22px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.experience-header span:last-child {
+  white-space: nowrap;
+}
+
+.experience-subheader {
+  margin: 2px 0 6px;
+  font-style: italic;
+  color: #444444;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+#footer {
+  margin-top: 44px;
+  padding-top: 12px;
+  border-top: 1px solid #bbbbbb;
+}
+
+#footer-text {
+  color: #777777;
+  font-size: 13px;
+  text-align: right;
+}
+
+
+/* =========================
+   Responsive layout
+   ========================= */
+
+@media (max-width: 850px) {
+  body {
+    font-size: 16px;
+  }
+
+  #layout-content {
+    width: calc(100% - 24px);
+    margin: 12px auto;
+    padding: 22px 24px 30px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .imgtable,
+  .imgtable tbody,
+  .imgtable tr,
+  .imgtable td {
+    display: block;
+    width: 100%;
+  }
+
+  .photo-cell {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 12px;
+  }
+
+  .profile-photo {
+    width: 160px;
+    max-width: 160px;
+  }
+
+  .intro-cell {
+    padding-top: 0;
+  }
+
+  .experience-header {
+    display: block;
+  }
+
+  .experience-header span {
+    display: block;
+  }
+
+  .experience-header span:last-child {
+    margin-top: 2px;
+    white-space: normal;
+    color: #555555;
+  }
+}
+
+@media (max-width: 520px) {
+  #layout-content {
+    width: 100%;
+    margin: 0;
+    padding: 18px 18px 28px;
+  }
+
+  .link-row {
+    line-height: 1.9;
+  }
+}
